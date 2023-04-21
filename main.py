@@ -5,7 +5,7 @@ from reportlab.pdfgen import canvas
 
 # with open ('hidden.txt') as file:
 # openai.api_key = file.read()
-openai.api_key = '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'
+openai.api_key = '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'
 
 class ChatbotGUI:
     def __init__(self):
@@ -48,6 +48,47 @@ class ChatbotGUI:
             return "Hello! How can I assist you today?"
         elif "goodbye" in user_message.lower():
             return "Goodbye! Have a nice day."
+        if "what are you doing now" in user_message.lower():
+            return "Nothing much just talk with you"
+        elif "bye" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        if "who is owner of this project" in user_message.lower():
+            return "MS.NAINIKA"
+        elif "" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        if "hello" in user_message.lower():
+            return "Hello! How can I assist you today?"
+        elif "goodbye" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        if "hello" in user_message.lower():
+            return "Hello! How can I assist you today?"
+        elif "goodbye" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        if "hello" in user_message.lower():
+            return "Hello! How can I assist you today?"
+        elif "goodbye" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        if "hello" in user_message.lower():
+            return "Hello! How can I assist you today?"
+        elif "goodbye" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        if "hello" in user_message.lower():
+            return "Hello! How can I assist you today?"
+        elif "goodbye" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        if "hello" in user_message.lower():
+            return "Hello! How can I assist you today?"
+        elif "goodbye" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        if "hello" in user_message.lower():
+            return "Hello! How can I assist you today?"
+        elif "goodbye" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        if "hello" in user_message.lower():
+            return "Hello! How can I assist you today?"
+        elif "goodbye" in user_message.lower():
+            return "Goodbye! Have a nice day."
+        
         else:
             prompt = f"Conversation with chatbot:\nUser: {user_message}\nBot:"
             response = openai.Completion.create(
